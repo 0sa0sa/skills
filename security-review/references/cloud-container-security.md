@@ -40,7 +40,7 @@ K8s/クラウドネイティブ、ハイブリッドクラウド、責任共有�
 - **なぜ重要か**: 各CSPのIAM実装は構造が異なり、移行時の見落としが過剰/不足権限を生む。
 - **出典**: Identity Security for Software Development 第6章
 
-### 10. IaCコードレビュー(自動スキャン含む)で、パブリックアクセスブロックの無効化やワイルドカードPrincipal(`*`)・ワイルドカードResource等の過剰許可設定を検出しているか
+### 10. IaCコードレビュー(自動スキャン含む)で、パブリックアクセスブロックの無効化やワイルドカードPrincipal(`*`)・ワイルドカードResource・ワイルドカードAction(`"Action": "*"`)等の過剰許可設定を検出しているか
 - **なぜ重要か**: S3バケットのTerraform例ではblock_public_acls=false等の設定が実際の情報漏洩パターンと一致する。
 - **出典**: Identity Security for Software Development 第6章; Security as Code(p.65-66)
 
